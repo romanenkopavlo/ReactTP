@@ -6,6 +6,7 @@ import React from 'react';
 import {Page1} from "./pages/Page1.tsx";
 import {Page2} from "./pages/Page2.tsx";
 import {UserLogin} from "./pages/User-login.tsx";
+import {Home} from "./pages/Home.tsx";
 
 const router = createBrowserRouter([
     {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
         element: <App/>,
         children: [
         {path: "/", element: <UserLogin/>},
+        {path: "/home", element: <Home/>},
         {path: "lienPage1", element: <Page1/>},
         {path: "lienPage2", element: <Page2/>} ]
     }
