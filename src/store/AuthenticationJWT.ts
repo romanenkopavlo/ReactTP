@@ -14,8 +14,7 @@ export const useAuthentificationJWTStore = create<InterfaceTokenStore>()(
         setToken: (newToken) => set({
             token: newToken
         })
-    }), {name: "taken-store",
-
+    }), {name: "token-store",
         partialize:(state) => ({
             token:encryptData(JSON.stringify(state.token))
         })}
